@@ -345,7 +345,7 @@ plt.show()
 """
 
 ! rm -rf images*
-! wget https://github.com/senisioi/artificial_intelligence_cti/raw/main/laborator2/images.zip
+! wget https://github.com/artificial-intelligence-ml-cti/ml_cti/raw/main/laborator2/images.zip
 ! unzip -o images.zip
 ! echo "*** Fisierele sunt: "
 ! ls images/
