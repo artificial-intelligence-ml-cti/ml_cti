@@ -1,2 +1,1 @@
-# artificial_intelligence_cti
-AI labs ml
+# Laboratoare de Inteligenta Artificiala CTI, an III, 2021-2022
