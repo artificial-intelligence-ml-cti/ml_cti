@@ -1,1 +1,3 @@
-# Laboratoare de Inteligenta Artificiala CTI, an III, 2021-2022
+# Laboratoare de Inteligenta Artificiala CTI, an III, 2022-2023
+
+
