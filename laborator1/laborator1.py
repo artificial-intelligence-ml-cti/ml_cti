@@ -9,7 +9,8 @@ Original file is located at
 # Tutorial python
 La adresa https://docs.python.org/3/tutorial/ se afla un scurt tutorial
 despre Python. 
-Alternativ puteti sa urmariti materialul urmator.
+
+Un tutorial vizual despre numpy este aici: https://jalammar.github.io/visual-numpy/
 """
 
 x = 3
@@ -393,6 +394,7 @@ g.greet(loud=True)
 # Apeleaza metoda greet(); Afiseaza "HELLO, FRED!"
 
 # e private, nu?
+
 g.__metoda_private()
 
 g._metoda_protected()
@@ -417,8 +419,29 @@ X_values = [
 ```
 Alegeți la întâmplare niște `weights = [0, 0]` și un `bias = 0` apoi iterați prin valorile `X_values` și afișați rezultatul funcției `neuron_liniar`.
 Ce valori trebuie să conțină weights și bias astfel încât funcția `sign` aplicată rezultatului `neuron_liniar` să returneze -1 dacă rezultatul AND este adevărat și 1 dacă este fals?
+"""
 
-# Evaluating an AI
+import numpy as np
+x = [1,1,-1]
+w = [1,-1,1]
+xx = [1, 1, -2]
+
+def dot(x, w):
+  sc = 0
+  for xi, wi in zip(x,w):
+    sc += xi * wi
+  return sc
+
+
+
+# a = 0.3 b = 0.1 c = 1
+punct = [x, y]
+# sa determinati daca punctul se afla la stanga, pe dreapta sau la dreapta dreptei?
+#  ax + by + c = 0
+weights = [a, b]
+bias = c
+
+"""# Evaluating an AI
 I. Se dau următoarele etichete prezise de un clasificator binar, `y_pred = [1, 1, 1, 0, 1, 0, 1, 1, 0, 0]` și etichetele `y_true = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]`.
 1. Definiti metoda `accuracy_score(y_true, y_pred)` care sa calculeze acuratetea clasificatorului binar.
 2. Definiti metoda `precision_recall_score(y_true, y_pred)` care returneaza
@@ -431,5 +454,84 @@ II. Un algoritm de inteligență artificială prezice prețurile apartamentelor 
 1. Definiti metoda `mse(y_true, y_pred)` (mean square error) care calculeaza media patratelor erorilor de clasificare.
 2. Definiti metoda `mae(y_true, y_pred)` (mean absolute error) care calculeaza media erorii absolute de clasificare.
 
-Mai multe detalii aici: https://en.wikipedia.org/wiki/Mean_squared_error#Predictor
+Mai multe detalii aici: https://en.wikipedia.org/wiki/Mean_squared_error#Predictor 
+si aici: https://en.wikipedia.org/wiki/Mean_absolute_error 
+
 """
+
+# paranteza 
+######
+
+X = np.array([[1, 1, 1], [1,-1, 0], [0, 1, 0], [0, 0, 1]])
+
+from copy import copy, deepcopy
+
+def f(tt):
+  #tt = np.copy(tt)
+  tt[0, 0] = 10
+
+
+print(X)
+f(X)
+print(X)
+######
+
+# paranteza despre axis
+X = np.array([[1, 1, 1], [1,-1, 0], [0, 1, 0], [0, 0, 1]])
+print(X)
+#print(X.T)
+print(X.shape)
+print(X.sum(axis=0))
+
+for i in range(0, X.shape[0]):
+  print(X[i])
+print('#####')
+
+# height, width
+matrice_3_dim = np.array([X, X+10, X+20])
+
+print(matrice_3_dim)
+print(matrice_3_dim.shape)
+print(matrice_3_dim.sum(axis=1))
+
+# next: evaluation metrics, more about numpy arrays, shapes, and axis
+
+# y un numar care codifica / reprezinta etichetele coresp. unor reprezentari vectoriale
+# valorile reale luate din setul complet de date ->
+y_true = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+# valorile prezise de catre AI in urma antrenarii ->
+y_pred = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+print(accuracy_score(y_true, y_pred))
+
+help(accuracy_score)
+
+help(np.where)
+
+import numpy as np
+y = np.array([0.5, 0.7, 0.1, 0.2, 0.6, 0.7, 0.9, 0.4, 0.8, 0.01])
+rez = (y >= 0.5).astype(int)
+y_true = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+print(accuracy_score(y_true, rez))
+
+indici = np.where(y >= 0.5)[0]
+y[indici]
+
+# valorile reale luate din setul complet de date ->
+y_true = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+# valorile prezise de catre AI in urma antrenarii ->
+y_pred = [1, 1, 1, 0, 1, 0, 1, 1, 0, 0]
+
+
+y_pred = np.array(y_pred)
+y_true = np.array(y_true)
+
+
+def f_score(y_true, y_pred, beta=1):
+  '''implementeze functia  de aici 
+  https://en.wikipedia.org/wiki/F-score
+  '''
+  return f_beta_score
+
+#print(f_score(y_true, y_pred))
+
