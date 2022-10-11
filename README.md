@@ -1,3 +1,7 @@
 # Laboratoare de Inteligenta Artificiala CTI, an III, 2022-2023
 
 - [Laborator 1 colab](https://colab.research.google.com/drive/1pxepMv2WlG9hnSkoG32ksU_UO-KlS4Eq?usp=sharing)
+
+- [Laborator 2 colab](https://colab.research.google.com/drive/15H7hUY7Xs44xJybnWO02sLHlyhOFFxSk)
+
+- [Laborator 3 colab](https://colab.research.google.com/drive/1emtT_r7I5bOhfXt7BFWH15d5jrhJ0w3W#scrollTo=KjprORTeyZNT)
