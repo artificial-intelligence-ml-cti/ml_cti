@@ -8,5 +8,5 @@
 
 - [Laborator 4 colab](https://colab.research.google.com/drive/1a8o2nvOp3u_239yKyUjL-aZqv-Mfig8Z?usp=sharing)
 
-- [Laborator 5 colab & proiect 🤔](https://colab.research.google.com/drive/1RI-fjhp4aix42ACYztUNa0pPbuo1wyzu?usp=sharing)
+- [Laborator 5 colab & proiect 🤔](https://colab.research.google.com/drive/1PWN7i2HlA97SG_DuZqK8EzNjnQA9tNcW?usp=sharing)
 
