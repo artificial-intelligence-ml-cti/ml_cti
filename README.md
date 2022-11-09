@@ -12,4 +12,4 @@
 
 - [Laborator 6 Perceptron](https://colab.research.google.com/drive/1z2V-1y2oZXvyRQkzWqZOTgMeQtivHsFG?usp=sharing)
 
-- [Laborator 7 Retele Neuronale](https://colab.research.google.com/drive/1tMwqcNy0Rjrxsyl4Fac3xSqs5BVxQWa-?usp=sharing)
+- [Laborator 7 Retele Neuronale](https://colab.research.google.com/drive/1tMwqcNy0Rjrxsyl4Fac3xSqs5BVxQWa-?usp=sharing), [Extra exemplu](https://colab.research.google.com/drive/1GGqkO-K0UN4WeAEmQPCTpahmdyCmrQAN?usp=sharing)
